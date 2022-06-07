@@ -157,10 +157,26 @@ console.log(naam.includes("vivek"));
 // Just a random program to check the number of elemnts whose value is >300.
 const price = [200,300,350,400,500,700,880,524,980];
 let cout = 0;
-for(let i = 1; i<price.length; i++){
-    if(price[i]>300){
-        console.log(price[i]);
+// for(let i = 1; i<price.length; i++){
+//     if(price[i]>300){
+//         console.log(price[i]);
+//         cout++;
+//     };
+// };
+// same question using for of loop
+// for(elem of price){
+//     if(elem>300){
+//         console.log(elem);
+//         cout++;
+//     }
+// }
+
+// using forEach loop
+
+price.forEach(function(elem,index,arr){
+    if(elem>300){
+        console.log(`${elem} index is : ${index} and the array is : ${arr}`);
         cout++;
-    };
-};
+    }
+});
 console.log(cout);
