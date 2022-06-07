@@ -155,7 +155,7 @@ console.log(naam.lastIndexOf("sarthak",1)); //here it will result -1
 
 console.log(naam.includes("vivek"));
 // Just a random program to check the number of elemnts whose value is >300.
-const price = [200,300,350,400,500,700,880,524,980];
+// const price = [200,300,350,400,500,700,880,524,980];
 let cout = 0;
 // for(let i = 1; i<price.length; i++){
 //     if(price[i]>300){
@@ -173,10 +173,26 @@ let cout = 0;
 
 // using forEach loop
 
-price.forEach(function(elem,index,arr){
-    if(elem>300){
-        console.log(`${elem} index is : ${index} and the array is : ${arr}`);
-        cout++;
-    }
-});
-console.log(cout);
+// price.forEach(function(elem,index,arr){
+//     if(elem>300){
+//         console.log(`${elem} index is : ${index} and the array is : ${arr}`);
+//         cout++;
+//     }
+// });
+// console.log(cout);
+// filter() method in javascript......it basically make a new array and when the condition is satisfied it will put that values in the new array
+
+// it return an empty array if the contion is not satisfied
+
+// const price = [200,300,350,400,500,700,880,524,980];
+// const newprice = price.filter((elem,index)=>{
+//     return elem>300;
+// });
+// console.log(newprice); 
+
+// sort() method is a method in array which is used to sort the array.
+// by default it sort the array in acending order
+// first it convert all the data into string and then sort it.
+
+let arr = [33,2,344,2,22,,443,22,498894,];
+console.log(arr.sort());
