@@ -154,3 +154,13 @@ console.log(naam.lastIndexOf("sarthak",1)); //here it will result -1
 // Third searching method i.e includes().....it basically returns true or false.if the value is present in the value it will return true if data is not present in the value it is false
 
 console.log(naam.includes("vivek"));
+// Just a random program to check the number of elemnts whose value is >300.
+const price = [200,300,350,400,500,700,880,524,980];
+let cout = 0;
+for(let i = 1; i<price.length; i++){
+    if(price[i]>300){
+        console.log(price[i]);
+        cout++;
+    };
+};
+console.log(cout);
