@@ -111,7 +111,20 @@ console.log(name[name.length - 1]);
 
 
 // exatrating all the values of array using for loop
-let num = [1,2,3,4,5,6,6,77,8788];
-for(let i = 0; i<num.length; i++){
-    console.log(num[i]);
+// let num = [1,2,3,4,5,6,6,77,8788];
+// for(let i = 0; i<num.length; i++){
+//     console.log(num[i]);
+// };
+
+// FOR IN LOOP
+// for in loop basically return the index numbes of the elements present in an array 
+for(let elem in name){
+    console.log(elem)
+};
+
+// FOR OF LOOP
+// for of loop return the original element present in the array
+
+for(h of name){
+    console.log(h);
 };
