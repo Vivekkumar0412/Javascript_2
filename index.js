@@ -212,3 +212,8 @@ console.log(arry);
 
 arry.pop();
 console.log(arry);
+
+// shift() method is same as pop() method.... it is used to remove something form the starting of the array.
+
+arry.shift();
+console.log(arry);
