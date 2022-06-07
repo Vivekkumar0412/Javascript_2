@@ -92,3 +92,26 @@
 //     return `total sum is ${a+b}`;
 // };
 // console.log(sum());
+
+// Arrays in javascript 
+//  Arrays gives us the power to store multiple data a single point
+// in javascrpt we can store any type of value in array unlike other programming languages we can only store a single type of data in an array
+
+// Inilitizing of an array
+
+let name = ["Vivek","Divya","Pranav"];
+
+// Traversal of an array
+// excessing a single element
+console.log(name[0]);
+// Excessing the last element of an array
+console.log(name[name.length - 1]);
+
+// .length is a property of an array that gives the length of an array, the value of length starts from 1
+
+
+// exatrating all the values of array using for loop
+let num = [1,2,3,4,5,6,6,77,8788];
+for(let i = 0; i<num.length; i++){
+    console.log(num[i]);
+};
