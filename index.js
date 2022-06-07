@@ -198,6 +198,11 @@ let arr = [33,2,344,2,22,,443,22,498894,];
 console.log(arr.sort());
 
 // Insert delete CRUD method in an array
+// .push() method add the value at the last of array
 let arry = ["vivek","Lion","lala"];
 arry.push("pranav");
+console.log(arry);
+
+// .unshift() is same as .push() method but the basic difference is it add data to the firt position.
+arry.unshift("Divya");
 console.log(arry);
