@@ -206,3 +206,9 @@ console.log(arry);
 // .unshift() is same as .push() method but the basic difference is it add data to the firt position.
 arry.unshift("Divya");
 console.log(arry);
+
+// pop() method is used to remove something from the array...it removes element from the last.
+// it also changes the length of the array
+
+arry.pop();
+console.log(arry);
