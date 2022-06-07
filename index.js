@@ -50,9 +50,26 @@
 
 // when string tamplet litrels was not availabe it was very lengthy to consanate two strings and insert values inside it 
 
-function table(a){
-    for(let i = 1; i<=10; i++){
-        console.log(`${a} X ${i} = ${a*i}`);
-    };
+// function table(a){
+//     for(let i = 1; i<=10; i++){
+//         console.log(`${a} X ${i} = ${a*i}`);
+//     };
+// };
+// table(5);
+
+// By default parameter : - these are the parameters which are given to avoid unexpected results.
+
+// function mult(a,b){
+//     return a*b;
+// };
+// console.log(mult(2));
+
+// the output of the above code will be Nan
+
+
+function mult(a,b=4){
+    return a*b;
 };
-table(5);
+console.log(mult(2));
+
+// but here output is 8 because the default value of b is 4.
