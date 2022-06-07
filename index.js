@@ -217,3 +217,22 @@ console.log(arry);
 
 arry.shift();
 console.log(arry);
+
+// splice() method in array
+// splice() method gives us the power to perform CRUD operation in a single go.
+
+let mr = ["hi","bye","jye"];
+// mr.splice(3,0,"tye_tye");
+// console.log(mr);
+
+// Splice() method that we will use in our genral coding
+mr.splice(1,1,"hu_hu");
+console.log(mr);
+let month = ["feb","march","april"]
+let newmonth = month.indexOf("april");
+if(newmonth != -1){
+    month.splice(newmonth,1,"April");
+    console.log(month);
+}else{
+    console.log("No data found");
+}
