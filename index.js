@@ -133,3 +133,13 @@ for(h of name){
 name.forEach(function(elem,ind,arr){
     console.log(`${elem} index is : ${ind} and the array is ${arr}`)
 });
+
+// SEARCHING AND FILTER METHOD IN ARRAY
+// indexOf() method.....it basically return the index of the elemnt if it is oresnt in the arry else it will retur -1.
+
+let naam = ["vivek", "pranav","sarthak"];
+console.log(naam.indexOf("vivek"));
+
+// by default the searching starts drom 0 but we can also define that from where the searching should start.
+
+console.log(naam.indexOf("sarthak",1));
