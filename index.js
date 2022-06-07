@@ -150,3 +150,7 @@ console.log(naam.indexOf("sarthak",1));
 console.log(naam.lastIndexOf("sarthak"));
 // i can also define from where to start searching.   
 console.log(naam.lastIndexOf("sarthak",1)); //here it will result -1
+
+// Third searching method i.e includes().....it basically returns true or false.if the value is present in the value it will return true if data is not present in the value it is false
+
+console.log(naam.includes("vivek"));
