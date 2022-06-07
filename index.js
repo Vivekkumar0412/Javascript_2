@@ -128,3 +128,8 @@ for(let elem in name){
 for(h of name){
     console.log(h);
 };
+// forEach loop
+// forEach loop is very important loop in javascript.....until now we have seen that using for in loop we can get the index number of an array.......using for of loops we can get the element of an array.........but with the help of forEach loop we can get the element, index as well as the complete in a single loop.
+name.forEach(function(elem,ind,arr){
+    console.log(`${elem} index is : ${ind} and the array is ${arr}`)
+});
