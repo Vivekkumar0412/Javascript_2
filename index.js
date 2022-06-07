@@ -67,9 +67,28 @@
 // the output of the above code will be Nan
 
 
-function mult(a,b=4){
-    return a*b;
-};
-console.log(mult(2));
+// function mult(a,b=4){
+//     return a*b;
+// };
+// console.log(mult(2));
 
 // but here output is 8 because the default value of b is 4.
+
+
+// Fat Arrow functions was also added during the update of ES6
+
+// normal function will not give error if it is called first then inilitazed
+// console.log(sumi());
+// function sumi(){
+//     let a = 3;
+//     let b = 7;
+//     return `total sum is ${a+b}`; 
+// }
+
+// but fat arrow function will give error if the function is called first and then inilized
+// const sum = () =>{
+//     let a = 3;
+//     let b = 7;
+//     return `total sum is ${a+b}`;
+// };
+// console.log(sum());
