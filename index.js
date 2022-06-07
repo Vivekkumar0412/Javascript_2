@@ -44,3 +44,15 @@
 // intro();
 
 // when we use let keyword we were not able to excess the lnme outside the if block because the lname was defined inside the if block...........and let scope is block
+
+
+// string tamplet literals was alss added in the update of ES6 nd it is one of the most important update
+
+// when string tamplet litrels was not availabe it was very lengthy to consanate two strings and insert values inside it 
+
+function table(a){
+    for(let i = 1; i<=10; i++){
+        console.log(`${a} X ${i} = ${a*i}`);
+    };
+};
+table(5);
