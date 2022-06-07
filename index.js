@@ -143,3 +143,10 @@ console.log(naam.indexOf("vivek"));
 // by default the searching starts drom 0 but we can also define that from where the searching should start.
 
 console.log(naam.indexOf("sarthak",1));
+
+// 2nd Method of searching and filter in an array
+// lastIndexOf() it is same as the indexOf() method but the basic difference is it start its iterations from the last index and move from backward to farword.
+
+console.log(naam.lastIndexOf("sarthak"));
+// i can also define from where to start searching.   
+console.log(naam.lastIndexOf("sarthak",1)); //here it will result -1
