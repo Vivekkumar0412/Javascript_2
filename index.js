@@ -196,3 +196,8 @@ let cout = 0;
 
 let arr = [33,2,344,2,22,,443,22,498894,];
 console.log(arr.sort());
+
+// Insert delete CRUD method in an array
+let arry = ["vivek","Lion","lala"];
+arry.push("pranav");
+console.log(arry);
