@@ -271,10 +271,19 @@ console.log(newviv);
 
 // Challenge question : - Find the sqaure root of every number in an array
 let ch1 = [1,2,3,4,5,6,7,8,9];
-let newch1 = ch1.map((elem,index,array)=>{
-    return `the square of ${elem} will be ${elem*elem} whose index is ${index} and it belong to ${array}`;
+// let newch1 = ch1.map((elem,index,array)=>{
+//     return `the square of ${elem} will be ${elem*elem} whose index is ${index} and it belong to ${array}`;
+// });
+// console.log(newch1);
+// Challenge question : - Find the sqaure root of every number in an array using chaining in map() method
+
+let newch11 = ch1.map((elem)=>{
+    return elem = elem *2;
+}).filter((elem)=>{
+    return elem>10;
 });
-console.log(newch1);
+console.log(newch11);
+// This is a very important concept which states that we can use multilpe methods in map() method it will make our task eay
 
 // Challenge question 2 : - Multiply each element by 2 and return only that value who is greater than 10
 let sount = 0;
