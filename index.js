@@ -276,3 +276,15 @@ let newch1 = ch1.map((elem,index,array)=>{
 });
 console.log(newch1);
 
+// Challenge question 2 : - Multiply each element by 2 and return only that value who is greater than 10
+let sount = 0;
+let newch2 = ch1.map((elem)=>{
+    elem = elem*2;
+    if(elem>10){
+        console.log(`the elements are ${elem}`);
+        sount++; 
+    }
+});
+console.log(newch2);
+console.log(sount);
+
