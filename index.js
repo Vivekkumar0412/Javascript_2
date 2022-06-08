@@ -269,3 +269,10 @@ let newviv = vi.map((elem,index,array)=>{
 });
 console.log(newviv);
 
+// Challenge question : - Find the sqaure root of every number in an array
+let ch1 = [1,2,3,4,5,6,7,8,9];
+let newch1 = ch1.map((elem,index,array)=>{
+    return `the square of ${elem} will be ${elem*elem} whose index is ${index} and it belong to ${array}`;
+});
+console.log(newch1);
+
