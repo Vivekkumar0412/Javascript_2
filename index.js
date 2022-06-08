@@ -235,4 +235,37 @@ if(newmonth != -1){
     console.log(month);
 }else{
     console.log("No data found");
-}
+};
+
+// forEach loop to sort the array
+let mri = [1,2,4,7,99,7,4,35,342,2,33,42,4,424,55,64,64,7,75,75];
+console.log(mri);
+let count = 0;
+mri.forEach(function(elem,index,array){
+    if(elem>9){
+        console.log(`the number is ${elem} whose index is ${index} and arrai is ${array}`);
+        count++;
+    }
+});
+console.log(`total numbers who are greater tha 9 is : ${count}`);
+
+// map() method in javascript
+// map() method returns a new array on the basis of operations we did on it
+let vi = [1,3,4,5,6,677,88999,786765,4];
+let mount = 0;
+let newvi = vi.map((elem)=>{
+    console.log(elem>4);
+    mount++;
+});
+console.log(`value of mount is ${mount}`);
+console.log(newvi);
+
+// so here it will return false where the condition is not satisfied and true where the conditions is satisfied.
+
+// we can also excess each and every element but it will return in a form of array
+
+let newviv = vi.map((elem,index,array)=>{
+    console.log(`the index of ${elem} is ${index} it belond to ${array}`);
+});
+console.log(newviv);
+
