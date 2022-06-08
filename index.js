@@ -327,4 +327,9 @@ let newre2 = re.map((elem)=>{
 console.log(newre2);
 
 
+// Reduce() method in one line
+
+let newre3 = re.map((elem)=> elem = elem*2).filter((elem)=> elem>10).reduce((accumulator,elem,index,array)=> accumulator = accumulator + elem);
+console.log(newre3);
+
 
