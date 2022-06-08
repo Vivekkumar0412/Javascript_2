@@ -283,6 +283,12 @@ let newch11 = ch1.map((elem)=>{
     return elem>10;
 });
 console.log(newch11);
+
+// i can write the above code in one line as well
+// here arrow function is returning only one line thats why we don,t need any return ketword.
+let newch112 = ch1.map((elem)=>{elem = elem *2;}).filter((elem)=>{elem>10;});
+console.log(newch112);
+
 // This is a very important concept which states that we can use multilpe methods in map() method it will make our task eay
 
 // Challenge question 2 : - Multiply each element by 2 and return only that value who is greater than 10
@@ -296,4 +302,29 @@ let newch2 = ch1.map((elem)=>{
 });
 console.log(newch2);
 console.log(sount);
+
+// Reduce() method is very useful method because it allow us to get a single value 
+//until now we were not capable to get results in one line but after reduce() method we are able to fetch the results in one line.
+
+// accumulator in the reduce() method is very important because it accyumulates all the data in a single varriable through which we can do multiple things like add, subyract, multipluy, didvide, average etc.
+
+let re = [1,2,3,4,5,6,7,8,9,7,7];
+let newre = re.reduce((accumulator,elem,index,array)=>{
+    return accumulator = accumulator + elem; 
+});
+console.log(newre);
+
+// chanining
+
+let newre2 = re.map((elem)=>{
+    return elem = elem *2;
+}).filter((elem)=>{
+    return elem>10;
+}).reduce((accumulator,elem,index,array)=>{
+    return accumulator  = accumulator + elem;
+});
+
+console.log(newre2);
+
+
 
