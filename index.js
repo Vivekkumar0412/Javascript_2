@@ -343,4 +343,15 @@ let newre21 = re.map((elem)=>{
 
 console.log(newre21);
 
+let flatarr = [
+    ['1','2',3],
+    ['4','5','6'],
+    ['7','8','9']
+];
+
+let newFlatarr = flatarr.reduce((accum,elem)=>{
+    return accum.concat(elem);
+});
+console.log(newFlatarr); 
+
 
