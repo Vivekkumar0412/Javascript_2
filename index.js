@@ -322,7 +322,7 @@ let newre2 = re.map((elem)=>{
     return elem>10;
 }).reduce((accumulator,elem,index,array)=>{
     return accumulator  = accumulator + elem;
-});
+},6);
 
 console.log(newre2);
 
@@ -331,5 +331,16 @@ console.log(newre2);
 
 let newre3 = re.map((elem)=> elem = elem*2).filter((elem)=> elem>10).reduce((accumulator,elem,index,array)=> accumulator = accumulator + elem);
 console.log(newre3);
+
+// using inilitizing value in reduce()
+let newre21 = re.map((elem)=>{
+    return elem = elem *2;
+}).filter((elem)=>{
+    return elem>10;
+}).reduce((accumulator,elem,index,array)=>{
+    return accumulator  = accumulator + elem;
+},9);
+
+console.log(newre21);
 
 
