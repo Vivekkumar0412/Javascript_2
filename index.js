@@ -474,5 +474,10 @@ console.log(ji[0]); // v
 
 // [] we have seen that this [ ] are used in array but we can also use this to acess the characters of strings.
 
+// some other useful methods in strings
+//.toUpperCase() method basically converts all the text to uppercase.
+console.log(ji.toUpperCase());
+//.toUpperCase() method basically converts all the text to uppercase.
+console.log(ji.toLowerCase());
 
 
