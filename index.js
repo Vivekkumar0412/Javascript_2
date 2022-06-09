@@ -431,4 +431,9 @@ console.log(substr.substring(8,-2));
 console.log(substr.substring(7,9));
 // print from 7 to 9
 
+// Third method
+// substr() method it is similar to slice() method but the basic differnce is that it takes length as second input
+
+console.log(substr.substr(0,5)); // Apple because it starts from 0 and print upto 5 excluding the value of 5.
+
 
