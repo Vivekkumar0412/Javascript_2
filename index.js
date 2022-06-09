@@ -455,5 +455,10 @@ console.log(mname.replace("kumar","singh"));
 let hih = 'vivek kumar';
 console.log(hih.charAt(0)); // v
 
+// charCodeAt() is very important method
+// it returns the character code of that perticular character
+console.log(hih.charCodeAt(0)); //118
+// 118 is the character code of v in utf16
+
 
 
