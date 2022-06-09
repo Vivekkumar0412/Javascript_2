@@ -465,5 +465,14 @@ console.log(hih.charCodeAt(0)); //118
 let hy = "vivek kumar";
 console.log(hy.charCodeAt(hy.length -1));
 
+// property excess method in javascript
+// this was an update in ES5 (2009) this was very useful upadate
+//it give us the power to excess the data like we did in an array
+
+let ji = "vivek kumar";
+console.log(ji[0]); // v
+
+// [] we have seen that this [ ] are used in array but we can also use this to acess the characters of strings.
+
 
 
