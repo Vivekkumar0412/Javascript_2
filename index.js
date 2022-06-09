@@ -407,3 +407,11 @@ let newstr = str.slice(0,4);
 console.log(newstr); //Mang
 // our output is man but it should have mango...whay that didnt happen because splice() method doesnt include last condition.
 
+let newstr2 = str.slice(7,-2);
+// it will remove the last two element and show result between 7 and last
+let newstr3 = str.slice(7);
+// it will show result till last starting from 7
+console.log(newstr2);
+console.log(newstr3);
+
+
