@@ -516,5 +516,15 @@ console.log(d.toString());
 let v = new Date(2022,3,4,13,15,0,0);
 console.log(v.toLocaleString());
 
+// If we do Date() only then the output will be completely correct
+// but if i wirte Date(2011) i will get a wrong output
+
+let c = new Date(2010); // jan 1 1970 00:00
+let b = new Date(2010,6); // 6th may 2010
+console.log(b.toLocaleString());
+
+// remenber one thing that if we are giveing any argument in Date() then minimum we shoud give 2 argument.
+// months argument is most necessary argument because if we not specify the month it will print 1 jan 1970.
+
 
 
