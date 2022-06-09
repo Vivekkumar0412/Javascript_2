@@ -480,4 +480,10 @@ console.log(ji.toUpperCase());
 //.toUpperCase() method basically converts all the text to uppercase.
 console.log(ji.toLowerCase());
 
+// trim() method this method is very useful this method is used to remove the extra spaces from the starting and ending position.
+let tr = "             hi there         ";
+console.log(tr);
+console.log(tr.trim());
+
+
 
