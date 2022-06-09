@@ -419,4 +419,16 @@ console.log(newstr3);
 let tweet = " HI there i am vivek kumar this is just an example to how to show only limited text";
 console.log(tweet.slice(0,10));
 
+// Second method for is substring() method 
+// it is same as slice() method but it does not take negative numbers as argument
+// if i give a negative number in argument then it will start printing number form 0 until the given number excluding the last number
+
+let substr = "Apple, grapes, mango";
+console.log(substr.substring(10));
+// print from 10 to last
+console.log(substr.substring(8,-2));
+// print from 0 to 8 but exclude the 8th position value
+console.log(substr.substring(7,9));
+// print from 7 to 9
+
 
