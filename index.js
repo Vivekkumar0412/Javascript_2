@@ -439,5 +439,17 @@ console.log(substr.substr(0,5)); // Apple because it starts from 0 and print upt
 //  if i want to print last 4 characters only
 console.log(substr.substr(-4));
 
+// replacing string content
+// replace()  method is a method which replace a specfic data from another specific data
+
+// it is case sensative
+// by default the it will only change the data which will be first
+
+let mname = " hi there my name is vivek kumar";
+console.log(mname.replace("kumar","singh"));
+// console.log(mname.replace("","hi"));
+
+
+
 
 
