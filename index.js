@@ -567,5 +567,10 @@ console.log(at.getMinutes());
 let bt = new Date();
 console.log(bt.toLocaleString());
 
+// if i want separate date only
+console.log(at.toLocaleDateString());
+// if i want time only.
+console.log(at.toLocaleTimeString());
+
 
 
