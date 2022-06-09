@@ -572,5 +572,32 @@ console.log(at.toLocaleDateString());
 // if i want time only.
 console.log(at.toLocaleTimeString());
 
+// Math object 
+// return the value of PI
+console.log(Math.PI);
+// round off the number in normal convention
+console.log(Math.round(44.9));
+
+// always round off the value to upper limit/integer
+console.log(Math.ceil(67.4));
+
+//find the square root of number
+console.log(Math.sqrt(66));
+
+// returns the absplute value always convert the negative value to positive
+console.log(Math.abs(-99));
+
+// use to know the power of any number 
+console.log(Math.pow(2,3));
+
+// it chop off the number before decimal and it always return a postive number
+console.log(Math.floor(99.883));
+
+// it also chop off the number before decimal but it didnt convert negative number ito posyive unlike math.floor()
+console.log(Math.trunc(-99.77));
+
+// it generates random number between 0 and 1 1 is excluded
+console.log(Math.random());
+
 
 
