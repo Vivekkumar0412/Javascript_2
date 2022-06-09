@@ -509,5 +509,12 @@ console.log(d);
 console.log(d.toLocaleString());
 console.log(d.toString());
 
+// if i need any specific date
+// remember one thing the counting starts fro 0 in javascript.
+// thats why 3 = April here.
+
+let v = new Date(2022,3,4,13,15,0,0);
+console.log(v.toLocaleString());
+
 
 
