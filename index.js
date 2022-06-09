@@ -461,4 +461,9 @@ console.log(hih.charCodeAt(0)); //118
 // 118 is the character code of v in utf16
 
 
+// bonus question : - return the character code of last character
+let hy = "vivek kumar";
+console.log(hy.charCodeAt(hy.length -1));
+
+
 
