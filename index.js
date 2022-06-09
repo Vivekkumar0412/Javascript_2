@@ -368,4 +368,14 @@ console.log(hui);
 
 console.log(hu.length);
 
+// Escape characters 
+// we can use escape characters to print that value which will generally give error 
+
+let sentence = "hi there i am \"vivek kuamr\"";
+console.log(sentence);
+
+// we can also use alternate questes in order to escape from this situation
+
+let sen = 'hi there i am "vivek kumar" ';
+console.log(sen);
 
