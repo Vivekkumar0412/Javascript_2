@@ -599,5 +599,8 @@ console.log(Math.trunc(-99.77));
 // it generates random number between 0 and 1 1 is excluded
 console.log(Math.random());
 
+// generate number between 1 to 10.
+ console.log(Math.floor(Math.random() * 11) );
+
 
 
