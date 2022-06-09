@@ -545,5 +545,14 @@ console.log(ac.getMonth());
 //yto get the day only
 console.log(ac.getDay());
 
+// until now we have seen how to get Date() properties now we wll see how to seet properties in Date()
+let da = new Date();
+console.log(da.setFullYear(2022));
+console.log(da.setMonth(3));
+console.log(da.setDate(12));
+// now we well get all the results in miloisecond format.
+// we can simply write as consloe.log(Date("milisecond value").toLocaleString());
+console.log(da.toLocaleString());
+
 
 
