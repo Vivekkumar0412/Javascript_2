@@ -414,4 +414,9 @@ let newstr3 = str.slice(7);
 console.log(newstr2);
 console.log(newstr3);
 
+// an example to how to show only limited text
+
+let tweet = " HI there i am vivek kumar this is just an example to how to show only limited text";
+console.log(tweet.slice(0,10));
+
 
