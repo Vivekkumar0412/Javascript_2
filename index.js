@@ -485,5 +485,15 @@ let tr = "             hi there         ";
 console.log(tr);
 console.log(tr.trim());
 
+// converting string into array
+let arstr = "a,b,c,f";
+let newarstr = arstr.split(",");// on the basis of comma
+let newarstr2 = arstr.split(" ");// on the basis of space
+let newarstr3 = arstr.split("|");// on the basis of or 
+newarstr.push('v');
+console.log(newarstr);
+console.log(newarstr2);
+console.log(newarstr3);
+
 
 
