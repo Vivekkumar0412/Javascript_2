@@ -379,3 +379,10 @@ console.log(sentence);
 let sen = 'hi there i am "vivek kumar" ';
 console.log(sen);
 
+// How to find string in a string
+let myd = "Hello there my there name is vivek kumar";
+console.log(myd.indexOf("vivek")); //23
+
+// I can also decide that from where the searching should start
+console.log(myd.indexOf("there",7));
+
