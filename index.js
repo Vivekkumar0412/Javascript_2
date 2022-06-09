@@ -396,3 +396,14 @@ console.log(myd.lastIndexOf("vivek"));
 // we can not specify in this unlike indexOf() method from where to start searching.
 console.log(myd.search("name"));
 
+// Extracting string parts in javascript
+// slice() method
+// it is same as splice() method in an array
+//it take 2 parameteres starting point and ending point
+// starting point is included but the ending ponit is not included
+
+let str = "Mango,Apple,Grapes";
+let newstr = str.slice(0,4);
+console.log(newstr); //Mang
+// our output is man but it should have mango...whay that didnt happen because splice() method doesnt include last condition.
+
