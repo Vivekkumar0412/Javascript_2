@@ -501,5 +501,13 @@ console.log(newarstr3);
 let starr = [1,2,3,4,4];
 console.log(starr.toString());
 
+// Date object
+// date object gives us the date and time
+//GTM+530 means india is 5 hour 30 mintues ahead of GMT Geehimik time
+let d = new Date();
+console.log(d);
+console.log(d.toLocaleString());
+console.log(d.toString());
+
 
 
