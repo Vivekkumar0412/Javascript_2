@@ -364,4 +364,8 @@ let hui = "Hello there";
 console.log(hu);
 console.log(hui);
 
+// using .length property we can check the length of string object
+
+console.log(hu.length);
+
 
