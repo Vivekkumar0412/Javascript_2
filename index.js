@@ -386,3 +386,7 @@ console.log(myd.indexOf("vivek")); //23
 // I can also decide that from where the searching should start
 console.log(myd.indexOf("there",7));
 
+// lastIndexof() it basically start checking from the backword side of the string
+
+console.log(myd.lastIndexOf("vivek"));
+
