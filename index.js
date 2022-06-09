@@ -554,5 +554,15 @@ console.log(da.setDate(12));
 // we can simply write as consloe.log(Date("milisecond value").toLocaleString());
 console.log(da.toLocaleString());
 
+// Time properties
+// how to get time
+
+let at = new Date();
+
+console.log(at.getTime());
+console.log(at.getHours());
+console.log(at.getSeconds());
+console.log(at.getMinutes());
+
 
 
