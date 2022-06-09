@@ -534,5 +534,16 @@ let a = new Date(1654800988294);
 // so basically we can put the milisecond inside the parameter of Date() and it will return the exact date corresonding to that milisecond.
 console.log(a.toLocaleString());
 
+// Methods to get inidividul values of Date();
+let ac = new Date();
+// to get exact date with all the information.
+console.log(ac.toLocaleString());
+// to get full year
+console.log(ac.getFullYear());
+// to get the month only
+console.log(ac.getMonth());
+//yto get the day only
+console.log(ac.getDay());
+
 
 
