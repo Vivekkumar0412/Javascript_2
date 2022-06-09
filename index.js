@@ -390,3 +390,9 @@ console.log(myd.indexOf("there",7));
 
 console.log(myd.lastIndexOf("vivek"));
 
+// searching in string
+// we use search() method for searching
+// it will give the first occurance of the object and -1 if data not found
+// we can not specify in this unlike indexOf() method from where to start searching.
+console.log(myd.search("name"));
+
