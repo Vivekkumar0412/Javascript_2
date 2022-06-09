@@ -564,5 +564,8 @@ console.log(at.getHours());
 console.log(at.getSeconds());
 console.log(at.getMinutes());
 
+let bt = new Date();
+console.log(bt.toLocaleString());
+
 
 
