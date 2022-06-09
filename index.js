@@ -449,7 +449,11 @@ let mname = " hi there my name is vivek kumar";
 console.log(mname.replace("kumar","singh"));
 // console.log(mname.replace("","hi"));
 
-
+// Character exactracting methods
+// charAt() method
+// this method basically returns the character at the specific index number
+let hih = 'vivek kumar';
+console.log(hih.charAt(0)); // v
 
 
 
