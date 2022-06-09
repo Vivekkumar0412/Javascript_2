@@ -526,5 +526,13 @@ console.log(b.toLocaleString());
 // remenber one thing that if we are giveing any argument in Date() then minimum we shoud give 2 argument.
 // months argument is most necessary argument because if we not specify the month it will print 1 jan 1970.
 
+// Date.now() is method which returns the total number of milisecond spend from 1jan 1970
+
+console.log(Date.now());
+let a = new Date(1654800988294);
+
+// so basically we can put the milisecond inside the parameter of Date() and it will return the exact date corresonding to that milisecond.
+console.log(a.toLocaleString());
+
 
 
