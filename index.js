@@ -496,4 +496,10 @@ console.log(newarstr2);
 console.log(newarstr3);
 
 
+// how to convert an arry into string
+// we use toString() method to convert an array into string.
+let starr = [1,2,3,4,4];
+console.log(starr.toString());
+
+
 
