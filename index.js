@@ -436,4 +436,8 @@ console.log(substr.substring(7,9));
 
 console.log(substr.substr(0,5)); // Apple because it starts from 0 and print upto 5 excluding the value of 5.
 
+//  if i want to print last 4 characters only
+console.log(substr.substr(-4));
+
+
 
