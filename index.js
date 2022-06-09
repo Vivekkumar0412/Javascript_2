@@ -355,3 +355,13 @@ let newFlatarr = flatarr.reduce((accum,elem)=>{
 console.log(newFlatarr); 
 
 
+// Strings in javascript
+// strings are basically used to add aur manipulate text
+// string can be written in single quote aur double quote
+
+let hu = 'hello world';
+let hui = "Hello there";
+console.log(hu);
+console.log(hui);
+
+
