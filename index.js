@@ -671,4 +671,8 @@ document.body.firstChild;
 // what if i want the actuyal first elememt
 // it will return me the actual first element child
 document.body.firstElementChild;
+ // i can also excess the sibling by doing this 
+document.body.firstElementChild.firstElementChild;
+
+// i 
 
