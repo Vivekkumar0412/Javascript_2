@@ -674,5 +674,22 @@ document.body.firstElementChild;
  // i can also excess the sibling by doing this 
 document.body.firstElementChild.firstElementChild;
 
-// i 
+// this was the complicated method to excess the sibling i can directly access the siblings
+
+// again it is goin to return the text same as we saw in nextChild and nextElementChild
+
+document.head.nextSibling;
+
+// if i want to get exact next sibling
+
+document.head.nextElementSibling;
+
+// if i want to get  previous sibling
+
+document.head.previousSibling;
+// if i want to get exact previous sibling
+
+document.head.previousElementSibling;
+
+
 
