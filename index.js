@@ -624,11 +624,21 @@ console.log(Math.floor(Math.random() * 11));
 // we can say that everyting that belong to document it also belong to window object but everything that belong to window object it is not necessary that it should also belong to document.
 
 // Window.location is used to find all the details of current web page
-console.log(window.location);
+// console.log(window.location);
 
 // window.location.href is used to find the current url
-console.log(window.location.href);
+// console.log(window.location.href);
 
 // even if we dont write window keyword in bith the codes then also it will give us same results.
-console.log(location.href);
-console.log(location.href);
+// console.log(location.href);
+// console.log(location.href);
+
+// BOM stands for browser object model it deals with browser objects like location, history, navigtion, screen
+
+// properties of window global obeject
+
+// basically it returns the inner height and inner width of the window
+// if we cahnge the height and width then also it will tell the correct values.
+
+console.log(window.innerHeight);
+console.log(window.innerWidth);
