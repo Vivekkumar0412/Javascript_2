@@ -602,5 +602,11 @@ console.log(Math.random());
 // generate number between 1 to 10.
  console.log(Math.floor(Math.random() * 11) );
 
+ // Window object in javascript
+ // Everything that we see in the browser is window object
+ // document is the child of window object
+ // we can say that everyting that belong to document it also belong to window object but everything that belong to window object it is not necessary that it should also belong to document.
+
+
 
 
