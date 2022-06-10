@@ -642,3 +642,10 @@ console.log(Math.floor(Math.random() * 11));
 
 console.log(window.innerHeight);
 console.log(window.innerWidth);
+
+// DOM stants for document object model
+// it basically creates a dom tree 
+// the root element of the dom is <html>
+
+// it returns the root element
+console.log(document.documentElement);
