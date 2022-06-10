@@ -657,3 +657,6 @@ console.log(document.childNodes);
 
 //if i want to know the exact elements then 
 document.children;
+
+// hasChildNodes() is method which return true and false value it basically tells us that wether a element have child nodes or not
+hasChildNodes();
