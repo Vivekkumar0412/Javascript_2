@@ -651,4 +651,9 @@ console.log(window.innerWidth);
 console.log(document.documentElement);
 
 // to know about number of child nodes
+// white spaces and tabs are also included in this
+// they come under the category of text
 console.log(document.childNodes);
+
+//if i want to know the exact elements then 
+document.children;
