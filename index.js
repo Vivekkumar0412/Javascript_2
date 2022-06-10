@@ -660,3 +660,15 @@ document.children;
 
 // hasChildNodes() is method which return true and false value it basically tells us that wether a element have child nodes or not
 hasChildNodes();
+
+// if i want to excess the first child of the body
+
+// this will return me the first child in the body....and here it will be text why..??
+// because as soon as we enter in the body we tend to type or press enter that creates a space and childNode property counts that also in the form of text
+
+document.body.firstChild;
+
+// what if i want the actuyal first elememt
+// it will return me the actual first element child
+document.body.firstElementChild;
+
