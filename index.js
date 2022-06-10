@@ -649,3 +649,6 @@ console.log(window.innerWidth);
 
 // it returns the root element
 console.log(document.documentElement);
+
+// to know about number of child nodes
+console.log(document.childNodes);
