@@ -693,25 +693,55 @@ console.log(Math.floor(Math.random() * 11));
 
 // How to search elements in DOM
 // how to select elemt by id
-document.getElementById("");
+// document.getElementById("");
 
 // How to select elemnt by class name
-document.getElementsByClassName("");
+// document.getElementsByClassName("");
 
 // how to select elemnt by tag name
-document.getElementsByTagName("");
+// document.getElementsByTagName("");
 
 // how to select element by name
 
-document.getElementsName("");
+// document.getElementsName("");
 
 // what is query selector ...??
 // query selector basically gives us the power to select any type of element
 // in its () i can write any element and it will give me its first occuranece.
-document.querySelector();
+// document.querySelector();
 
 // we can also use querSelectorAll() that will give me the list of all the elements mentioned in the ().
 
-document.querySelectorAll();
+// document.querySelectorAll();
+
+//  Events and how to add events in javascript
+
+function callfun(){
+  alert("hi there its using the conventional funtion which is used by most of the people");
+};
+// but we have a problem with this type of event calling...
+// the problem is we try to call an event by same name then it overrites a call.
+
+let btn2 = document.getElementById('2');
+btn2.onclick = () =>{
+  alert("Hi we are dealing with the problem")
+};
+
+// it will ignore the first call beacuse the first call is overwritten by the second call.
+
+btn2.onclick = () =>{
+  alert("Hi we are dealing with the problem again")
+};
+
+// Now the most usefull and correct way of calling an event is using event listner
+
+let btn3 = document.getElementById('3');
+btn3.addEventListener('click',()=>{
+  alert(" This is the most effective way of writing an event.")
+});
+
+btn3.addEventListener('click',function(){
+  alert("Because it does not ignore any code nor it overwrite any thong it just go with the flow")
+});
 
 
