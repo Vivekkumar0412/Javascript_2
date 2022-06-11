@@ -640,56 +640,78 @@ console.log(Math.floor(Math.random() * 11));
 // basically it returns the inner height and inner width of the window
 // if we cahnge the height and width then also it will tell the correct values.
 
-console.log(window.innerHeight);
-console.log(window.innerWidth);
+// console.log(window.innerHeight);
+// console.log(window.innerWidth);
 
 // DOM stants for document object model
 // it basically creates a dom tree 
 // the root element of the dom is <html>
 
 // it returns the root element
-console.log(document.documentElement);
+// console.log(document.documentElement);
 
 // to know about number of child nodes
 // white spaces and tabs are also included in this
 // they come under the category of text
-console.log(document.childNodes);
+// console.log(document.childNodes);
 
 //if i want to know the exact elements then 
-document.children;
+// document.children;//
 
 // hasChildNodes() is method which return true and false value it basically tells us that wether a element have child nodes or not
-hasChildNodes();
+// hasChildNodes();
 
 // if i want to excess the first child of the body
 
 // this will return me the first child in the body....and here it will be text why..??
 // because as soon as we enter in the body we tend to type or press enter that creates a space and childNode property counts that also in the form of text
 
-document.body.firstChild;
+// document.body.firstChild;
 
 // what if i want the actuyal first elememt
 // it will return me the actual first element child
-document.body.firstElementChild;
+// document.body.firstElementChild;
  // i can also excess the sibling by doing this 
-document.body.firstElementChild.firstElementChild;
+// document.body.firstElementChild.firstElementChild;
 
 // this was the complicated method to excess the sibling i can directly access the siblings
 
 // again it is goin to return the text same as we saw in nextChild and nextElementChild
 
-document.head.nextSibling;
+// document.head.nextSibling;
 
 // if i want to get exact next sibling
 
-document.head.nextElementSibling;
+// document.head.nextElementSibling;
 
 // if i want to get  previous sibling
 
-document.head.previousSibling;
+// document.head.previousSibling;
 // if i want to get exact previous sibling
 
-document.head.previousElementSibling;
+// document.head.previousElementSibling;
 
+// How to search elements in DOM
+// how to select elemt by id
+document.getElementById("");
+
+// How to select elemnt by class name
+document.getElementsByClassName("");
+
+// how to select elemnt by tag name
+document.getElementsByTagName("");
+
+// how to select element by name
+
+document.getElementsName("");
+
+// what is query selector ...??
+// query selector basically gives us the power to select any type of element
+// in its () i can write any element and it will give me its first occuranece.
+document.querySelector();
+
+// we can also use querSelectorAll() that will give me the list of all the elements mentioned in the ().
+
+document.querySelectorAll();
 
 
