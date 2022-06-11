@@ -748,4 +748,13 @@ btn3.addEventListener('click',function(){
 // the parent of all the events is called as Event object.
 // some examples of events click, blur, focus.
 
+// it is basically a way of checking that what are the events that have been fired.
+        // it also tells us that where the event has been fired.
+        const checkfun = () =>{
+          console.log(event);
+          console.log(event.type);
+          console.log(event.target);
+      }
+      btn3.addEventListener('click',checkfun);
+
 
