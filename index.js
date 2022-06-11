@@ -744,4 +744,8 @@ btn3.addEventListener('click',function(){
   alert("Because it does not ignore any code nor it overwrite any thong it just go with the flow")
 });
 
+// what is Event object
+// the parent of all the events is called as Event object.
+// some examples of events click, blur, focus.
+
 
