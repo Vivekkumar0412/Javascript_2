@@ -734,6 +734,8 @@ btn2.onclick = () =>{
 };
 
 // Now the most usefull and correct way of calling an event is using event listner
+// Because it allow us to write multiple events on a single varriable.
+// it does not overrite anything.
 
 let btn3 = document.getElementById('3');
 btn3.addEventListener('click',()=>{
@@ -755,6 +757,6 @@ btn3.addEventListener('click',function(){
           console.log(event.type);
           console.log(event.target);
       }
-      btn3.addEventListener('click',checkfun);
+      btn3.addEventListener('click',checkfun); 
 
 
