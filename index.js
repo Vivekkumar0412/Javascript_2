@@ -759,4 +759,10 @@ btn3.addEventListener('click',function(){
       }
       btn3.addEventListener('click',checkfun); 
 
+// MouseEvent objects
+// all the things or actions which are related to mouse comes under the category of mouseEvnet object
+// simply i can say that those events which are happening due to interaction of mouse in the html comes under mouseEvents.
+
+
+
 
