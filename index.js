@@ -805,3 +805,17 @@ function keyPress(){
     p.innerHTML =` YOU HAVE PRESSED THE ${event.key}. `;
 };
 
+// keydown event
+function keyPress(){
+  p.innerHTML =` YOU HAVE PRESSED THE ${event.key}. `;
+};
+
+function keyDown(){
+  p1.innerHTML = `The key is pressed.`
+};
+
+// keyup event
+function keyUp(){
+  p1.innerHTML = `The key is leaved.`
+};
+
