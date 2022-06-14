@@ -778,3 +778,18 @@ let para = document.getElementById('p');
         };
 
 
+// ommouseenter event
+// basically this evet is fired when we the mouse enter in a defined are
+
+let btn1 = document.getElementById('6');
+        function mouseEnter(){
+            btn1.style.backgroundColor = 'red';
+            btn1.style.color = 'yellow';
+        };
+ // onmoueleave
+ // this is also a mouse event which is fired whne the mouse leave a certain area   
+        function mouseLeave(){
+            btn1.style.backgroundColor = 'yellow';
+            btn1.style.color = 'red';
+        }
+
