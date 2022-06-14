@@ -793,5 +793,15 @@ let btn1 = document.getElementById('6');
             btn1.style.backgroundColor = 'yellow';
             btn1.style.color = 'red';
             console.log("MOUSE LEAVE ");
-        }
+        };
+
+// keyboard events
+// keyboard events basocally starts when we press some keys on the keyboard
+// keypress event
+
+let inp = document.getElementById('inp');
+let p = document.getElementById('p');
+function keyPress(){
+    p.innerHTML =` YOU HAVE PRESSED THE ${event.key}. `;
+};
 
