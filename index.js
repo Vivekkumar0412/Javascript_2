@@ -763,6 +763,18 @@ btn3.addEventListener('click',function(){
 // all the things or actions which are related to mouse comes under the category of mouseEvnet object
 // simply i can say that those events which are happening due to interaction of mouse in the html comes under mouseEvents.
 
+let para = document.getElementById('p');
+        // para.addEventListener('onmousedown',mouseDown);
+        // para.addEventListener('onmouseup',mouseUp);
 
+        
+        // when we wll click on the paragraph it will change its color to red.
+        function mouseDown(){
+            para.style.color ='red';
+        }
+        // as soon as i will free the poniter of mouse it will change to green.
+        function mouseUp(){
+            para.style.color ='green';
+        };
 
 
