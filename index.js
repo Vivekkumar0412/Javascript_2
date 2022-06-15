@@ -846,3 +846,9 @@ btn.addEventListener('click',()=>{
 
 //setTimeInterval() basically tells us that after which certain time we need to call the function again and again
 
+btn.addEventListener('click',()=>{
+  myName.innerHTML = "Loading....";
+  setInterval(callname,1000);
+});
+
+
