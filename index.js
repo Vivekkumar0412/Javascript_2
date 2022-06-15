@@ -844,3 +844,5 @@ btn.addEventListener('click',()=>{
     setTimeout(callname,1000);
 });
 
+//setTimeInterval() basically tells us that after which certain time we need to call the function again and again
+
