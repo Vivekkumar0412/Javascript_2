@@ -832,6 +832,8 @@ const change = () =>{
 // setTimeout()
 //setTimeinterval().
 
+// setTime() basically tells us that after how many miliseconds it will be executed.
+
 let btn = document.getElementById("btn");
 let myName = document.getElementById("myName");
 const callname = ()=>{
