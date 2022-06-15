@@ -819,3 +819,11 @@ function keyUp(){
   p1.innerHTML = `The key is leaved.`
 };
 
+// onchange event 
+// this event will be triggred when we change something.
+const change = () =>{
+  let inp = document.getElementById('inp').value;
+  let icecream =  document.getElementById('icecream').value;
+  console.log(`${inp} selects ${icecream}`);
+}
+
