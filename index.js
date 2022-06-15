@@ -827,3 +827,8 @@ const change = () =>{
   console.log(`${inp} selects ${icecream}`);
 }
 
+//timig based events
+// there are mainly to main events
+// setTimeout()
+//setTimeinterval().
+
