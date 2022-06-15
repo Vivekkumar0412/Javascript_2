@@ -832,3 +832,13 @@ const change = () =>{
 // setTimeout()
 //setTimeinterval().
 
+let btn = document.getElementById("btn");
+let myName = document.getElementById("myName");
+const callname = ()=>{
+    myName.innerHTML = "Hi my name is Vivek kumar";
+}
+btn.addEventListener('click',()=>{
+    myName.innerHTML = "Loading....";
+    setTimeout(callname,1000);
+});
+
