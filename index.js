@@ -644,7 +644,7 @@ console.log(Math.floor(Math.random() * 11));
 // console.log(window.innerWidth);
 
 // DOM stants for document object model
-// it basically creates a dom tree 
+// it basically creates a dom tree
 // the root element of the dom is <html>
 
 // it returns the root element
@@ -655,7 +655,7 @@ console.log(Math.floor(Math.random() * 11));
 // they come under the category of text
 // console.log(document.childNodes);
 
-//if i want to know the exact elements then 
+//if i want to know the exact elements then
 // document.children;//
 
 // hasChildNodes() is method which return true and false value it basically tells us that wether a element have child nodes or not
@@ -671,7 +671,7 @@ console.log(Math.floor(Math.random() * 11));
 // what if i want the actuyal first elememt
 // it will return me the actual first element child
 // document.body.firstElementChild;
- // i can also excess the sibling by doing this 
+// i can also excess the sibling by doing this
 // document.body.firstElementChild.firstElementChild;
 
 // this was the complicated method to excess the sibling i can directly access the siblings
@@ -716,34 +716,38 @@ console.log(Math.floor(Math.random() * 11));
 
 //  Events and how to add events in javascript
 
-function callfun(){
-  alert("hi there its using the conventional funtion which is used by most of the people");
-};
+function callfun() {
+  alert(
+    "hi there its using the conventional funtion which is used by most of the people"
+  );
+}
 // but we have a problem with this type of event calling...
 // the problem is we try to call an event by same name then it overrites a call.
 
-let btn2 = document.getElementById('2');
-btn2.onclick = () =>{
-  alert("Hi we are dealing with the problem")
+let btn2 = document.getElementById("2");
+btn2.onclick = () => {
+  alert("Hi we are dealing with the problem");
 };
 
 // it will ignore the first call beacuse the first call is overwritten by the second call.
 
-btn2.onclick = () =>{
-  alert("Hi we are dealing with the problem again")
+btn2.onclick = () => {
+  alert("Hi we are dealing with the problem again");
 };
 
 // Now the most usefull and correct way of calling an event is using event listner
 // Because it allow us to write multiple events on a single varriable.
 // it does not overrite anything.
 
-let btn3 = document.getElementById('3');
-btn3.addEventListener('click',()=>{
-  alert(" This is the most effective way of writing an event.")
+let btn3 = document.getElementById("3");
+btn3.addEventListener("click", () => {
+  alert(" This is the most effective way of writing an event.");
 });
 
-btn3.addEventListener('click',function(){
-  alert("Because it does not ignore any code nor it overwrite any thong it just go with the flow")
+btn3.addEventListener("click", function () {
+  alert(
+    "Because it does not ignore any code nor it overwrite any thong it just go with the flow"
+  );
 });
 
 // what is Event object
@@ -751,81 +755,79 @@ btn3.addEventListener('click',function(){
 // some examples of events click, blur, focus.
 
 // it is basically a way of checking that what are the events that have been fired.
-        // it also tells us that where the event has been fired.
-        const checkfun = () =>{
-          console.log(event);
-          console.log(event.type);
-          console.log(event.target);
-      }
-      btn3.addEventListener('click',checkfun); 
+// it also tells us that where the event has been fired.
+const checkfun = () => {
+  console.log(event);
+  console.log(event.type);
+  console.log(event.target);
+};
+btn3.addEventListener("click", checkfun);
 
 // MouseEvent objects
 // all the things or actions which are related to mouse comes under the category of mouseEvnet object
 // simply i can say that those events which are happening due to interaction of mouse in the html comes under mouseEvents.
 
-let para = document.getElementById('p');
-        // para.addEventListener('onmousedown',mouseDown);
-        // para.addEventListener('onmouseup',mouseUp);
+let para = document.getElementById("p");
+// para.addEventListener('onmousedown',mouseDown);
+// para.addEventListener('onmouseup',mouseUp);
 
-        
-        // when we wll click on the paragraph it will change its color to red.
-        function mouseDown(){
-            para.style.color ='red';
-        }
-        // as soon as i will free the poniter of mouse it will change to green.
-        function mouseUp(){
-            para.style.color ='green';
-        };
-
+// when we wll click on the paragraph it will change its color to red.
+function mouseDown() {
+  para.style.color = "red";
+}
+// as soon as i will free the poniter of mouse it will change to green.
+function mouseUp() {
+  para.style.color = "green";
+}
 
 // ommouseenter event
 // basically this evet is fired when we the mouse enter in a defined are
 
-let btn1 = document.getElementById('6');
-        function mouseEnter(){
-            btn1.style.backgroundColor = 'red';
-            btn1.style.color = 'yellow';
-            console.log("MOUSE ENTER ");
-        };
- // onmoueleave
- // this is also a mouse event which is fired whne the mouse leave a certain area   
-        function mouseLeave(){
-            btn1.style.backgroundColor = 'yellow';
-            btn1.style.color = 'red';
-            console.log("MOUSE LEAVE ");
-        };
+let btn1 = document.getElementById("6");
+function mouseEnter() {
+  btn1.style.backgroundColor = "red";
+  btn1.style.color = "yellow";
+  console.log("MOUSE ENTER ");
+}
+// onmoueleave
+// this is also a mouse event which is fired whne the mouse leave a certain area
+function mouseLeave() {
+  btn1.style.backgroundColor = "yellow";
+  btn1.style.color = "red";
+  console.log("MOUSE LEAVE ");
+}
 
 // keyboard events
 // keyboard events basocally starts when we press some keys on the keyboard
 // keypress event
 
-let inp = document.getElementById('inp');
-let p = document.getElementById('p');
-function keyPress(){
-    p.innerHTML =` YOU HAVE PRESSED THE ${event.key}. `;
-};
+let inp = document.getElementById("inp");
+let p = document.getElementById("p");
+function keyPress() {
+  p.innerHTML = ` YOU HAVE PRESSED THE ${event.key}. `;
+}
 
 // keydown event
-function keyPress(){
-  p.innerHTML =` YOU HAVE PRESSED THE ${event.key}. `;
-};
+function keyPress() {
+  p.innerHTML = ` YOU HAVE PRESSED THE ${event.key}. `;
+}
 
-function keyDown(){
-  p1.innerHTML = `The key is pressed.`
-};
+function keyDown() {
+  p1.innerHTML = `The key is pressed.`;
+}
 
 // keyup event
-function keyUp(){
-  p1.innerHTML = `The key is leaved.`
-};
-
-// onchange event 
-// this event will be triggred when we change something.
-const change = () =>{
-  let inp = document.getElementById('inp').value;
-  let icecream =  document.getElementById('icecream').value;
-  console.log(`${inp} selects ${icecream}`);
+function keyUp() {
+  p1.innerHTML = `The key is leaved.`;
 }
+
+// onchange event
+// this event will be triggred when we change something.
+const change = () => {
+  let inp = document.getElementById("inp").value;
+  let icecream = document.getElementById("icecream").value;
+  console.log(`${inp} selects ${icecream}`);
+};
 
 //timig based events
 // there are mainly to main events
@@ -836,28 +838,34 @@ const change = () =>{
 
 let btn = document.getElementById("btn");
 let myName = document.getElementById("myName");
-const callname = ()=>{
-    myName.innerHTML = "Hi my name is Vivek kumar";
-}
-btn.addEventListener('click',()=>{
-    myName.innerHTML = "Loading....";
-    setTimeout(callname,1000);
+const callname = () => {
+  myName.innerHTML = "Hi my name is Vivek kumar";
+};
+btn.addEventListener("click", () => {
+  myName.innerHTML = "Loading....";
+  setTimeout(callname, 1000);
 });
 
 // ClearTimeout() is used to stop the setTimeout().
 
 //setTimeInterval() basically tells us that after which certain time we need to call the function again and again
 
-
 let star = document.getElementById("start");
-function startTime(){
-    setInterval(()=>{
-        tm.innerHTML = count;
-        count++;
-    },1000);
+function startTime() {
+  setInterval(() => {
+    tm.innerHTML = count;
+    count++;
+  }, 1000);
 }
-star.addEventListener("click",startTime());
+star.addEventListener("click", startTime());
 
+// clearInterval()
 
+// clearInterval() is used to stop the timeInterval()
 
+// let star = document.getElementById("start");
+let stopp = document.getElementById("stopp");
 
+stopp.addEventListener("click", function () {
+  clearInterval(inter);
+});
