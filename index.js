@@ -844,11 +844,20 @@ btn.addEventListener('click',()=>{
     setTimeout(callname,1000);
 });
 
+// ClearTimeout() is used to stop the setTimeout().
+
 //setTimeInterval() basically tells us that after which certain time we need to call the function again and again
 
-btn.addEventListener('click',()=>{
-  myName.innerHTML = "Loading....";
-  setInterval(callname,1000);
-});
+
+let star = document.getElementById("start");
+function startTime(){
+    setInterval(()=>{
+        tm.innerHTML = count;
+        count++;
+    },1000);
+}
+star.addEventListener("click",startTime());
+
+
 
 
