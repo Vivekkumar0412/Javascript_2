@@ -951,4 +951,15 @@ console.log(this);
  // and all the varriables which are defined in the global scope belongs to the window object.
 
 
+ // until now we have seen that the context of this is always a window object.
+ // but whne we use it inside an object its context chnages to that object.
+
+ let oo = {
+  fanme : "krishna",
+  call(){
+    console.log(this.fanme);
+  }
+ }
+oo.call();
+
 
