@@ -962,4 +962,17 @@ console.log(this);
  }
 oo.call();
 
+// we can not use this keyword in inside fat arrow function
+
+let onb = {
+  rol:59,
+  cl : ()=>{
+    console.log(this)
+  }
+}
+onb.cl();
+
+// again the context of this will chnage to the window object here.
+// we may say that it is one of the demerit of fat arrow funtion
+
 
