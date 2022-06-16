@@ -915,5 +915,9 @@ let cbj = {
 
 cbj.fullname.call();
 
+// this object ...??
+// this object basically holds the value of current context.
+// the value of this object will chnange with respect to its location.
+
 
 
