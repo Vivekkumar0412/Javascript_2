@@ -875,3 +875,18 @@ stopp.addEventListener("click", function () {
 // what is object literals ...?
 // object literals are basically a data structure which stores the value in the form of kye and it value.
 // we can store any type of data inside this.
+
+// How can we define an object.
+
+// objects are always defined inside curly braces.
+// we can access its values using .method
+
+let obj = {
+  fname : "vivek",
+  lname : "kumar",
+  call: function(){
+    console.log(`my name is ${obj.fname}`);
+  }
+};
+
+
