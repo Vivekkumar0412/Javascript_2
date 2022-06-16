@@ -975,4 +975,16 @@ onb.cl();
 // again the context of this will chnage to the window object here.
 // we may say that it is one of the demerit of fat arrow funtion
 
+// destructuring in ES6
+// the destructure assinment is the syntax of javascript which allow us to unpack the values of arrays as well as the objects.
+
+let abc = ["vivek","kumar",59];
+let f= abc[0];
+let b1 = abc[1];
+let b2 = abc[2];
+
+console.log(b2);
+
+// so here i destructured the values of an array using the traditional method of usimg the index numbers
+
 
