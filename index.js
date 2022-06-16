@@ -1080,4 +1080,7 @@ console.log(y.flat(7));
 // it will now flat up to 7 level
 // i can write infinity so that it will flat all the values.
 
+// use strict
+// use strict basically allow us to wirte effective code we can not write ugly code.
+
 
