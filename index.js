@@ -928,4 +928,12 @@ console.log(this);
  // so here the "this" keyword have the power to access the properties of window object
 
 
+ // what is the context of this here ...??
+ function call(){
+  console.log(this);
+ };
+
+ // here also this belongs to window object
+
+
 
