@@ -889,4 +889,15 @@ let obj = {
   }
 };
 
+// after ECMA script 2015 we dont need to write funtion keyword to define a funtio in an object.
+
+let objj = {
+  fname : "vivek",
+  lname : "kumar",
+  call(){
+    console.log(`my name is ${obj.fname}`);
+  }
+};
+
+
 
