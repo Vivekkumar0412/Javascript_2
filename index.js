@@ -1000,3 +1000,10 @@ let [pnaamm, lsnaam, aage] = abc;
 let [pnaam, lnaam, age, degree = "B.tech"] = abc;
 console.log(degree);
 
+
+// if i want i can even skip the values as well
+
+let nu = [1,2,3,4,5,6,7,8];
+let nu1 = [a,b, , , , ,c];
+console.log(a,b,c); // a = 1, b = 2, c = 7
+
