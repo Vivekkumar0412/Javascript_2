@@ -1061,3 +1061,23 @@ let ob4 = {
  console.log(att);
 
  // it will have both the values
+
+ // flat() method is used to flat the array
+ // until now we have this this using the reduce() method in which we have donw this by using accumulator and concat method.
+ // but now we can diretly do that.
+
+ let y = [
+  [1,2,3,[0,9,8]],
+  [4,5,6],
+  [9,09,8,[2,3,4]]
+ ];
+
+ console.log(y.flat());
+
+ // it also have same problem like reduce that it will flat up to one level only but we can pass parameter in this in order to flat the array.
+console.log(y.flat(7));
+
+// it will now flat up to 7 level
+// i can write infinity so that it will flat all the values.
+
+
