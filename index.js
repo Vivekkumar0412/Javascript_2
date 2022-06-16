@@ -899,5 +899,21 @@ let objj = {
   }
 };
 
+// we can even add object as a value inside an object
+
+let cbj = {
+  fullname : {
+    fname : "Vivek",
+    lanme: "kumar",
+    call(){
+      console.log(`my name is ${cbj.fullname.fname} ${cbj.fullname.lanme}`)
+    }
+  }
+};
+
+// calling the function.
+
+cbj.fullname.call();
+
 
 
