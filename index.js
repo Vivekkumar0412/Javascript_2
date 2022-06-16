@@ -1018,3 +1018,13 @@ let ob4 = {
 
  console.log(fanme,agee);
 
+ // properties of an object
+
+ // we can get the dynamic values
+
+ let hiui = "vivek";
+ let on1 = {
+  [hiui] : "hello ji kaise ho saare"
+ };
+ console.log(on1);
+
