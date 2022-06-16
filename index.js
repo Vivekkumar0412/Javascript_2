@@ -987,4 +987,14 @@ console.log(b2);
 
 // so here i destructured the values of an array using the traditional method of usimg the index numbers
 
+// modern way of destructuring the array
+
+let [pnaam, lnaam, age] = abc;
+
+// so here i can excess each ande very data very easily
+// but we need to remenbe that it is very position specific
+// what ever varriable is defined first will be assingend the index number first.
+
+
+
 
