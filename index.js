@@ -919,5 +919,13 @@ cbj.fullname.call();
 // this object basically holds the value of current context.
 // the value of this object will chnange with respect to its location.
 
+console.log(this);
+
+// so here it is referring to the window object.
+// if i do somthing like this...
+ console.log(this.alert("Hi there it is using the this object !"));
+
+ // so here the "this" keyword have the power to access the properties of window object
+
 
 
