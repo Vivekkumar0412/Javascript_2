@@ -989,12 +989,14 @@ console.log(b2);
 
 // modern way of destructuring the array
 
-let [pnaam, lnaam, age] = abc;
+let [pnaamm, lsnaam, aage] = abc;
 
 // so here i can excess each ande very data very easily
 // but we need to remenbe that it is very position specific
 // what ever varriable is defined first will be assingend the index number first.
 
+// we can even add values to it.
 
-
+let [pnaam, lnaam, age, degree = "B.tech"] = abc;
+console.log(degree);
 
