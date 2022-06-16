@@ -1007,3 +1007,14 @@ let nu = [1,2,3,4,5,6,7,8];
 let nu1 = [a,b, , , , ,c];
 console.log(a,b,c); // a = 1, b = 2, c = 7
 
+// object destructuring
+// object destructuring is same as the array destructuring but here we use {} insted of [].
+
+let ob4 = {
+  fname : "vivek",
+  age : 59
+};
+ let {fnamee, agee} = ob4;
+
+ console.log(fanme,agee);
+
