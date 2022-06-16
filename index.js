@@ -869,3 +869,9 @@ let stopp = document.getElementById("stopp");
 stopp.addEventListener("click", function () {
   clearInterval(inter);
 });
+
+// Object oriented programmimg in javascript
+
+// what is object literals ...?
+// object literals are basically a data structure which stores the value in the form of kye and it value.
+// we can store any type of data inside this.
