@@ -1028,3 +1028,20 @@ let ob4 = {
  };
  console.log(on1);
 
+
+ // we dont need to write the name and key if they are same
+
+ let name1 = "vivek";
+ let age3 = 24;
+
+ // traditional way
+ let bh = {
+  name1 : name1,
+  age3 : age3
+ };
+
+ console.log(bh); //{name1 : "vivek", age3 : 24} 
+
+ // after ECAM 2015
+ let bh1 = {name1,age3};
+ console.log(bh1); //{name1 : "vivek", age3 : 24} 
