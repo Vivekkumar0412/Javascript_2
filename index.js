@@ -935,5 +935,20 @@ console.log(this);
 
  // here also this belongs to window object
 
+ // what will be the output and why..??
+
+ let hi = "vivek";
+ function callu(){
+  console.log(this.hi);
+ };
+
+ callu();
+
+ // the output of the code will Vivek...why??
+ // beacause hi is defined in the global scope...
+ // and the context of this is window object....
+
+ // and all the varriables which are defined in the global scope belongs to the window object.
+
 
 
