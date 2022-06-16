@@ -1045,3 +1045,19 @@ let ob4 = {
  // after ECAM 2015
  let bh1 = {name1,age3};
  console.log(bh1); //{name1 : "vivek", age3 : 24} 
+
+ // spread operator in javascrit
+ // spread operator is used to use the value of already existing array so that we would not reapet the step to inilized it again and assign the value.
+
+ let q = [1,2,3,4];
+ let p1 = [8,9];
+
+ const pp1 = [...q,8,9];
+ console.log(p1);
+
+ // i can also do this
+
+ const att = [...q,...p1];
+ console.log(att);
+
+ // it will have both the values
