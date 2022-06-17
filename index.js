@@ -1083,4 +1083,13 @@ console.log(y.flat(7));
 // use strict
 // use strict basically allow us to wirte effective code we can not write ugly code.
 
+// Event propagation.
+// event propagation basicalyy tells us the behaviour of the event.
+// There are basically two types of event propagation
+// 1. Event bubbling(buttom to top).
+//2. Event capturing(top to buttom).
 
+
+  
+  
+  
