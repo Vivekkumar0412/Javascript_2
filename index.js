@@ -882,33 +882,33 @@ stopp.addEventListener("click", function () {
 // we can access its values using .method
 
 let obj = {
-  fname : "vivek",
-  lname : "kumar",
-  call: function(){
+  fname: "vivek",
+  lname: "kumar",
+  call: function () {
     console.log(`my name is ${obj.fname}`);
-  }
+  },
 };
 
 // after ECMA script 2015 we dont need to write funtion keyword to define a funtio in an object.
 
 let objj = {
-  fname : "vivek",
-  lname : "kumar",
-  call(){
+  fname: "vivek",
+  lname: "kumar",
+  call() {
     console.log(`my name is ${obj.fname}`);
-  }
+  },
 };
 
 // we can even add object as a value inside an object
 
 let cbj = {
-  fullname : {
-    fname : "Vivek",
+  fullname: {
+    fname: "Vivek",
     lanme: "kumar",
-    call(){
-      console.log(`my name is ${cbj.fullname.fname} ${cbj.fullname.lanme}`)
-    }
-  }
+    call() {
+      console.log(`my name is ${cbj.fullname.fname} ${cbj.fullname.lanme}`);
+    },
+  },
 };
 
 // calling the function.
@@ -923,53 +923,51 @@ console.log(this);
 
 // so here it is referring to the window object.
 // if i do somthing like this...
- console.log(this.alert("Hi there it is using the this object !"));
+console.log(this.alert("Hi there it is using the this object !"));
 
- // so here the "this" keyword have the power to access the properties of window object
+// so here the "this" keyword have the power to access the properties of window object
 
-
- // what is the context of this here ...??
- function call(){
+// what is the context of this here ...??
+function call() {
   console.log(this);
- };
+}
 
- // here also this belongs to window object
+// here also this belongs to window object
 
- // what will be the output and why..??
+// what will be the output and why..??
 
- let hi = "vivek";
- function callu(){
+let hi = "vivek";
+function callu() {
   console.log(this.hi);
- };
+}
 
- callu();
+callu();
 
- // the output of the code will Vivek...why??
- // beacause hi is defined in the global scope...
- // and the context of this is window object....
+// the output of the code will Vivek...why??
+// beacause hi is defined in the global scope...
+// and the context of this is window object....
 
- // and all the varriables which are defined in the global scope belongs to the window object.
+// and all the varriables which are defined in the global scope belongs to the window object.
 
+// until now we have seen that the context of this is always a window object.
+// but whne we use it inside an object its context chnages to that object.
 
- // until now we have seen that the context of this is always a window object.
- // but whne we use it inside an object its context chnages to that object.
-
- let oo = {
-  fanme : "krishna",
-  call(){
+let oo = {
+  fanme: "krishna",
+  call() {
     console.log(this.fanme);
-  }
- }
+  },
+};
 oo.call();
 
 // we can not use this keyword in inside fat arrow function
 
 let onb = {
-  rol:59,
-  cl : ()=>{
-    console.log(this)
-  }
-}
+  rol: 59,
+  cl: () => {
+    console.log(this);
+  },
+};
 onb.cl();
 
 // again the context of this will chnage to the window object here.
@@ -978,8 +976,8 @@ onb.cl();
 // destructuring in ES6
 // the destructure assinment is the syntax of javascript which allow us to unpack the values of arrays as well as the objects.
 
-let abc = ["vivek","kumar",59];
-let f= abc[0];
+let abc = ["vivek", "kumar", 59];
+let f = abc[0];
 let b1 = abc[1];
 let b2 = abc[2];
 
@@ -1000,81 +998,79 @@ let [pnaamm, lsnaam, aage] = abc;
 let [pnaam, lnaam, age, degree = "B.tech"] = abc;
 console.log(degree);
 
-
 // if i want i can even skip the values as well
 
-let nu = [1,2,3,4,5,6,7,8];
-let nu1 = [a,b, , , , ,c];
-console.log(a,b,c); // a = 1, b = 2, c = 7
+let nu = [1, 2, 3, 4, 5, 6, 7, 8];
+let nu1 = [a, b, , , , , c];
+console.log(a, b, c); // a = 1, b = 2, c = 7
 
 // object destructuring
 // object destructuring is same as the array destructuring but here we use {} insted of [].
 
 let ob4 = {
-  fname : "vivek",
-  age : 59
+  fname: "vivek",
+  age: 59,
 };
- let {fnamee, agee} = ob4;
+let { fnamee, agee } = ob4;
 
- console.log(fanme,agee);
+console.log(fanme, agee);
 
- // properties of an object
+// properties of an object
 
- // we can get the dynamic values
+// we can get the dynamic values
 
- let hiui = "vivek";
- let on1 = {
-  [hiui] : "hello ji kaise ho saare"
- };
- console.log(on1);
+let hiui = "vivek";
+let on1 = {
+  [hiui]: "hello ji kaise ho saare",
+};
+console.log(on1);
 
+// we dont need to write the name and key if they are same
 
- // we dont need to write the name and key if they are same
+let name1 = "vivek";
+let age3 = 24;
 
- let name1 = "vivek";
- let age3 = 24;
+// traditional way
+let bh = {
+  name1: name1,
+  age3: age3,
+};
 
- // traditional way
- let bh = {
-  name1 : name1,
-  age3 : age3
- };
+console.log(bh); //{name1 : "vivek", age3 : 24}
 
- console.log(bh); //{name1 : "vivek", age3 : 24} 
+// after ECAM 2015
+let bh1 = { name1, age3 };
+console.log(bh1); //{name1 : "vivek", age3 : 24}
 
- // after ECAM 2015
- let bh1 = {name1,age3};
- console.log(bh1); //{name1 : "vivek", age3 : 24} 
+// spread operator in javascrit
+// spread operator is used to use the value of already existing array so that we would not reapet the step to inilized it again and assign the value.
 
- // spread operator in javascrit
- // spread operator is used to use the value of already existing array so that we would not reapet the step to inilized it again and assign the value.
+let q = [1, 2, 3, 4];
+let p1 = [8, 9];
 
- let q = [1,2,3,4];
- let p1 = [8,9];
+const pp1 = [...q, 8, 9];
+console.log(p1);
 
- const pp1 = [...q,8,9];
- console.log(p1);
+// i can also do this
 
- // i can also do this
+const att = [...q, ...p1];
+console.log(att);
 
- const att = [...q,...p1];
- console.log(att);
+// it will have both the values
 
- // it will have both the values
+// flat() method is used to flat the array
+// until now we have this this using the reduce() method in which we have donw this by using accumulator and concat method.
+// but now we can diretly do that.
 
- // flat() method is used to flat the array
- // until now we have this this using the reduce() method in which we have donw this by using accumulator and concat method.
- // but now we can diretly do that.
+let y = [
+  [1, 2, 3, [0, 9, 8]],
+  [4, 5, 6],
+  [9, 09, 8, [2, 3, 4]],
+];
 
- let y = [
-  [1,2,3,[0,9,8]],
-  [4,5,6],
-  [9,09,8,[2,3,4]]
- ];
+console.log(y.flat());
 
- console.log(y.flat());
-
- // it also have same problem like reduce that it will flat up to one level only but we can pass parameter in this in order to flat the array.
+// it also have same problem like reduce that it will flat up to one level only but we can pass parameter in this in order to flat the array.
 console.log(y.flat(7));
 
 // it will now flat up to 7 level
@@ -1089,23 +1085,24 @@ console.log(y.flat(7));
 // 1. Event bubbling(buttom to top).
 //2. Event capturing(top to buttom).
 
-let parentt = document.getElementById("parentt");
-        let childd = document.getElementById("childd");
-
-        let callChild = () => {
-            alert("CHILD IS CLICKED !!");
-            console.log("child div clicked.")
-            
-        };
-
-        let callParent = () => {
-            alert("Parent div is clicked !!!");
-            console.log("parent div here !!");
-            event.stopPropagation();
-        };
 // defining events
 
+let parentt = document.getElementById("parentt");
+let childd = document.getElementById("childd");
 
-  
-  
-  
+let callChild = () => {
+  alert("CHILD IS CLICKED !!");
+  console.log("child div clicked.");
+};
+
+let callParent = () => {
+  alert("Parent div is clicked !!!");
+  console.log("parent div here !!");
+  event.stopPropagation();
+};
+
+// this is the by defaut behaviour of event propagation i.e event bubblng.
+// it will go from innermost element to outer most element(buttom to top).
+// if we did not write false in the event listener() then also it is fine.
+childd.addEventListener("click", callChild(), false);
+parentt.addEventListener("click", callParent(), false);
