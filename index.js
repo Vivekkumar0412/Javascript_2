@@ -1106,3 +1106,10 @@ let callParent = () => {
 // if we did not write false in the event listener() then also it is fine.
 childd.addEventListener("click", callChild(), false);
 parentt.addEventListener("click", callParent(), false);
+
+// in event capturing the event propagation moves from top to bottum
+// which means it will be first consider the outermost element then it willmove toward the innermost element.
+// we have to simple write "true" in the paranthesis of eventlistener()
+
+childd.addEventListener("click", callChild(), true);
+parentt.addEventListener("click", callParent(), true);
