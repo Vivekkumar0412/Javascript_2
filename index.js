@@ -1089,6 +1089,22 @@ console.log(y.flat(7));
 // 1. Event bubbling(buttom to top).
 //2. Event capturing(top to buttom).
 
+let parentt = document.getElementById("parentt");
+        let childd = document.getElementById("childd");
+
+        let callChild = () => {
+            alert("CHILD IS CLICKED !!");
+            console.log("child div clicked.")
+            
+        };
+
+        let callParent = () => {
+            alert("Parent div is clicked !!!");
+            console.log("parent div here !!");
+            event.stopPropagation();
+        };
+// defining events
+
 
   
   
