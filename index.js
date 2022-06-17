@@ -1113,3 +1113,21 @@ parentt.addEventListener("click", callParent(), false);
 
 childd.addEventListener("click", callChild(), true);
 parentt.addEventListener("click", callParent(), true);
+
+// call back funtion is that type of function which basically take a function as an argument
+
+// traditional way of making a calculator.
+// we need to console.log() time and again
+let sum = (num1, num2) => {
+  return Math.abs(num1 + num2);
+};
+
+let sub = (num1, num2) => {
+  return Math.abs(num1 - num2);
+};
+
+let mul = (num1, num2) => {
+  return Math.abs(num1 * num2);
+};
+
+console.log(mul(6, 8));
