@@ -1131,3 +1131,11 @@ let mul = (num1, num2) => {
 };
 
 console.log(mul(6, 8));
+
+// this is how call back function works.
+// sum() is called as an argument inside the calculator() function
+const calculat = (num1, num2, operat) => {
+  return operat(num1, num2);
+};
+
+console.log(calculat(4, 5, sum));
