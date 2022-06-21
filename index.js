@@ -1168,4 +1168,11 @@ let fun1 = ()=>{
 
 fun1();
 
+// now when fun1() will be called it will create a space for fun1() in the global execution context.
+
+// as soon as it enters the fun1() it will find the console.log() statement...
+// so it will create a space for that console.log() statement in the global execution context.
+
+// and when the console.log() statement will be executed it will be removed from the global execution context.
+
  
