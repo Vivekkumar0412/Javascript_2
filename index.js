@@ -1144,4 +1144,8 @@ console.log(calculat(4, 5, sum));
 // Event loop basically comesunder the topic of advance javascript.
 // whenever we call a function or statement a global execution context is created..
 
+// global execution context is basically that space where the progaram is being executed.
+
+// once the programm is being executed then then the code is remobved from the global execution context.
+
  
