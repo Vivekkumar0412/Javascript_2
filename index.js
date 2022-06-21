@@ -1204,4 +1204,17 @@ fun1();
 // event loop basically decides when to send data from message que to global execution context.
 
 
+// function currying
+
+
+
+function sum12(num1){
+  return function(num2){
+    return function(num3){
+      console.log(num1+num2+num3);
+    }
+  }
+};
+sum12(2)(5)(9);
+
  
