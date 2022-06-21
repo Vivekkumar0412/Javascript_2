@@ -1221,6 +1221,32 @@ sum12(2)(5)(9);
 
 const sum123 = (num1)=>(num2)=>(num3)=>console.log(num1+num2+num3);
 
-// it is the most optimisd code .
+// it is the most optimisd code .  
+
+// how to make xmlhttsRequest
+
+
+let bt2n = document.getElementById("btn");
+bt2n.addEventListener("click", callBtn);
+let con = document.querySelector(".con");
+
+function callBtn() {
+
+    let fakeUrl = new XMLHttpRequest();
+    let urll = "https://jsonplaceholder.typicode.com/users"
+
+    fakeUrl.open("GET", urll);
+    fakeUrl.onload = function () {
+        if (this.status === 200) {
+            // console.log(JSON.parse(this.responseText));
+            con.innerHTML = JSON.parse(this.responseText);
+        }
+    }
+
+
+    fakeUrl.send();
+
+}
+
 
  
