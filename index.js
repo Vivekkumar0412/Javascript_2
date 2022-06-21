@@ -1183,4 +1183,9 @@ fun1();
 
 // so it will move the fun2() to WEB APIS section from the global execution section.
 
+// what is WEB APIS section...?
+
+// so when a progarm is enterd in the global exectuion context it shold be exectude immediately if it is creating any blocakage to further any program then it is send to the web apis secton and removed m=from the global execution context.
+
+
  
