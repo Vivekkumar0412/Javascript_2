@@ -1150,11 +1150,15 @@ console.log(calculat(4, 5, sum));
 
 // ex:-
 
+// function 2 is created in which we have used setTimeout() function to understant event loop
+
 const fun2 = ()=>{
   setTimeout(()=>{
     console.log(" i am inside the function 2nd ");
   },3000);
-}
+};
+
+// inside fun1() we have called the fun2() in order to understant event loop better.
 
 let fun1 = ()=>{
   console.log("hi there its function 1");
