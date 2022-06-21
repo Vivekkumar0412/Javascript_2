@@ -1217,4 +1217,10 @@ function sum12(num1){
 };
 sum12(2)(5)(9);
 
+// infact we can writ the above code in one line as well.
+
+const sum123 = (num1)=>(num2)=>(num3)=>console.log(num1+num2+num3);
+
+// it is the most optimisd code .
+
  
