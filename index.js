@@ -1175,4 +1175,12 @@ fun1();
 
 // and when the console.log() statement will be executed it will be removed from the global execution context.
 
+// after that it will come to second statement inside the fun1() and here it will find that we have called fun2().
+
+// and it will be moved to fun2() and it will create a sapce for the fun2() in the global execution context.
+
+// but as soon as it enters in the fun2() it will find that there is callback function i.e a seTimeout() function which shold be on hold for 3 secs.
+
+// so it will move the fun2() to WEB APIS section from the global execution section.
+
  
