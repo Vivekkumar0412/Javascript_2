@@ -1200,4 +1200,8 @@ fun1();
 // a message que is a line where the statement are gathered in a que in order to get space in the global execution context.
 
 
+// here event loop basically comes in the action..
+// event loop basically decides when to send data from message que to global execution context.
+
+
  
