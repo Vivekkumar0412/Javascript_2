@@ -1139,3 +1139,9 @@ const calculat = (num1, num2, operat) => {
 };
 
 console.log(calculat(4, 5, sum));
+
+// Event loop in javascript.
+// Event loop basically comesunder the topic of advance javascript.
+// whenever we call a function or statement a global execution context is created..
+
+ 
