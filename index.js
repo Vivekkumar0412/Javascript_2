@@ -1187,5 +1187,11 @@ fun1();
 
 // so when a progarm is enterd in the global exectuion context it shold be exectude immediately if it is creating any blocakage to further any program then it is send to the web apis secton and removed m=from the global execution context.
 
+// so when fun2() is sent to the web api section....it will again come in the fun1() section to check wether everything is finished or still something is left.
+
+// then it will find another consolo.log() statement over there.... and it will create a space for that console.log() statement in the global exectution context and it will be exectuded immediately.
+
+// now fun1() will be removed from the global execution context.
+
 
  
