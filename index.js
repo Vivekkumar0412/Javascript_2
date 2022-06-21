@@ -1206,7 +1206,7 @@ fun1();
 
 // function currying
 
-
+// function currying basically says that the insted of giving multiple arguments to a single funtion we should give one argument aand return a new function that will take another argument and again return a function that will take the third argument and so forth.
 
 function sum12(num1){
   return function(num2){
