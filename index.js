@@ -1148,4 +1148,20 @@ console.log(calculat(4, 5, sum));
 
 // once the programm is being executed then then the code is remobved from the global execution context.
 
+// ex:-
+
+const fun2 = ()=>{
+  setTimeout(()=>{
+    console.log(" i am inside the function 2nd ");
+  },3000);
+}
+
+let fun1 = ()=>{
+  console.log("hi there its function 1");
+  fun2();
+  console.log("hi there its again function 1 ");
+};
+
+fun1();
+
  
