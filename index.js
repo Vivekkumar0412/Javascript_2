@@ -1193,5 +1193,11 @@ fun1();
 
 // now fun1() will be removed from the global execution context.
 
+// as soon as 3 seconds will be over the fun2() code will be sent to the message que.
+
+// what is message que...??
+
+// a message que is a line where the statement are gathered in a que in order to get space in the global execution context.
+
 
  
