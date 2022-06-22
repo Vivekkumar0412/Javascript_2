@@ -1345,6 +1345,24 @@ vb.onerror = function(){
 
 vb.onprogress = function(event){
   alert(`${event.loaded} : of ${event.total}`)
+};
+
+// complete example:- 
+
+let ci = new XMLHttpRequest();
+ci.open("GET","hi.html",true);
+ci.send();
+
+ci.onload = function(){
+  if(this.status!=200){
+    alert(`error occured at ${this.status} : ${this.statusText}`)
+  }else{
+    alert(`done with ${ci.response.length}`)
+  }
+};
+
+ci.onprogress = function(){
+  
 }
 
 
