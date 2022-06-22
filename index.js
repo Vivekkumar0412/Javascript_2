@@ -1226,27 +1226,60 @@ const sum123 = (num1)=>(num2)=>(num3)=>console.log(num1+num2+num3);
 // how to make xmlhttsRequest
 
 
-let bt2n = document.getElementById("btn");
-bt2n.addEventListener("click", callBtn);
-let con = document.querySelector(".con");
+// let bt2n = document.getElementById("btn");
+// bt2n.addEventListener("click", callBtn);
+// let con = document.querySelector(".con");
 
-function callBtn() {
+// function callBtn() {
 
-    let fakeUrl = new XMLHttpRequest();
-    let urll = "https://jsonplaceholder.typicode.com/users"
+//     let fakeUrl = new XMLHttpRequest();
+//     let urll = "https://jsonplaceholder.typicode.com/users"
 
-    fakeUrl.open("GET", urll);
-    fakeUrl.onload = function () {
-        if (this.status === 200) {
-            // console.log(JSON.parse(this.responseText));
-            con.innerHTML = JSON.parse(this.responseText);
+//     fakeUrl.open("GET", urll);
+//     fakeUrl.onload = function () {
+//         if (this.status === 200) {
+//             // console.log(JSON.parse(this.responseText));
+//             con.innerHTML = JSON.parse(this.responseText);
+//         }
+//     }
+
+
+//     fakeUrl.send();
+
+// };
+
+
+let btn = document.getElementById("btn1");
+        let con = document.getElementById("con");
+
+        function callBtn() {
+            // alert("hi there")
+            const xh = new XMLHttpRequest();
+
+            xh.open('GET', 'https://jsonplaceholder.typicode.com/users', true);
+
+            xh.onprogress = function () {
+                console.log("progress.....");
+            };
+
+            xh.onload = function () {
+                if (this.status === 200) {
+                    console.log("loaded.")
+                    console.log(this.responseText);
+                    console.log(this.status);
+                    console.log(this.statusText);
+                    console.log(this.responseType);
+                    console.log(this.response.length);
+                    con.innerHTML = JSON.parse(this.responseText);
+                }
+
+            }
+
+            xh.send();
         }
-    }
 
-
-    fakeUrl.send();
-
-}
+        btn.addEventListener("click", callBtn);
+    
 
 
  
