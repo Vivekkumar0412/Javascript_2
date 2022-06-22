@@ -1328,6 +1328,11 @@ vb.send();
 // if there will be any error while communicating with the server this will be triggered.
 
 
+// progress.
+
+// this property basically triggers time and again.
+// because it tells us all the necessary details while something is loading 
+
 
     
 
