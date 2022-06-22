@@ -1279,6 +1279,11 @@ let btn = document.getElementById("btn1");
         }
 
         btn.addEventListener("click", callBtn);
+
+// XMLHttpRequest is basically a bulit in object n javascript that allow us tp make HTTP Request...
+
+// what is http request..??
+// http stants for hyper text transfer protocol which acts a median between client and server.
     
 
 
