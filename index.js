@@ -1249,7 +1249,7 @@ const sum123 = (num1)=>(num2)=>(num3)=>console.log(num1+num2+num3);
 // };
 
 
-let btn = document.getElementById("btn1");
+// let btn = document.getElementById("btn1");
         let con = document.getElementById("con");
 
         function callBtn() {
@@ -1308,6 +1308,16 @@ vb.open("GET","WWW.GOOGLE.COM",true);
 
 // note that until now connection has not beeen established.
 // open method only says that what are things we need to sedn on the server.
+
+// now send() method comes in the action
+// send method basicalyy initiate the network connection betweeen server and host.
+
+// we can also pass parameter inside the send() method.
+// GET do not have any body.
+// POST do have a body that can be sent to server as an argument.
+vb.send();
+
+
     
 
 
