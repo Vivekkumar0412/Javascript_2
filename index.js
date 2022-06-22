@@ -1317,6 +1317,13 @@ vb.open("GET","WWW.GOOGLE.COM",true);
 // POST do have a body that can be sent to server as an argument.
 vb.send();
 
+// we have different properties of XMLHttprequest.
+
+// load property.
+
+// basically when request is completed this is triggered.
+
+
 
     
 
