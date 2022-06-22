@@ -1305,6 +1305,9 @@ let vb = new XMLHttprequest();
 //3. Type: - asynchronous or synchronous
 
 vb.open("GET","WWW.GOOGLE.COM",true);
+
+// note that until now connection has not beeen established.
+// open method only says that what are things we need to sedn on the server.
     
 
 
