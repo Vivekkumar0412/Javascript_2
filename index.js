@@ -1337,6 +1337,10 @@ vb.send();
 
 vb.onload = function(){
   alert(`loaded ${vb.status}: out of ${vb.response}`)
+};
+
+vb.onerror = function(){
+  alert("some error occured");
 }
 
 
