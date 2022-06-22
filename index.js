@@ -1341,6 +1341,10 @@ vb.onload = function(){
 
 vb.onerror = function(){
   alert("some error occured");
+};
+
+vb.onprogress = function(event){
+  alert(`${event.loaded} : of ${event.total}`)
 }
 
 
