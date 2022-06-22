@@ -1323,6 +1323,10 @@ vb.send();
 
 // basically when request is completed this is triggered.
 
+// error.
+
+// if there will be any error while communicating with the server this will be triggered.
+
 
 
     
