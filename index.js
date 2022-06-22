@@ -1333,6 +1333,12 @@ vb.send();
 // this property basically triggers time and again.
 // because it tells us all the necessary details while something is loading 
 
+//ex:=>
+
+vb.onload = function(){
+  alert(`loaded ${vb.status}: out of ${vb.response}`)
+}
+
 
     
 
