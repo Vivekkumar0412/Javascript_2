@@ -1284,6 +1284,10 @@ let btn = document.getElementById("btn1");
 
 // what is http request..??
 // http stants for hyper text transfer protocol which acts a median between client and server.
+
+//  XMLHttprequest bascally comprises of 2 methods :- 1. Asynchronus 2. synchronous
+
+// most of the time Asynchronous methods are used
     
 
 
