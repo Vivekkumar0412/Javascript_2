@@ -1288,6 +1288,23 @@ let btn = document.getElementById("btn1");
 //  XMLHttprequest bascally comprises of 2 methods :- 1. Asynchronus 2. synchronous
 
 // most of the time Asynchronous methods are used
+
+// steps to create a XMLHttprequest
+
+// 1. create a varriable.
+
+let vb = new XMLHttprequest();
+
+// now open it.
+
+// open() method comprises of 4 arguments:-
+//1. Method : - usually GET  and POST
+
+// 2. URL:- name of the server from which interaction will be done.
+
+//3. Type: - asynchronous or synchronous
+
+vb.open("GET","WWW.GOOGLE.COM",true);
     
 
 
